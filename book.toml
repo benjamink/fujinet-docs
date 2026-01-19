@@ -2,3 +2,10 @@
 title = "FujiNet Documentation"
 authors = ["Benjamin Krein"]
 language = "en"
+
+[output.html]
+default-theme ="dark"
+sidebar-header-nav = true 
+
+[output.html.fold]
+enable = true
