@@ -5,7 +5,8 @@ language = "en"
 
 [output.html]
 default-theme ="dark"
-sidebar-header-nav = true 
+sidebar-header-nav = true
+no-section-label = true
 
 [output.html.fold]
 enable = true

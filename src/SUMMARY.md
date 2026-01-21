@@ -16,7 +16,7 @@
     - [Commodore C64/C128](./users/platform_overview/commodore.md)
     - [PC - MS-DOS RS232](./users/platform_overview/pc_msdos_rs232.md)
     - [Tandy CoCo](./users/platform_overview/tandy_coco.md)
-- [platform_overview the Device](./users/connecting_the_device.md)
+- [Connecting the Device](./users/connecting_the_device.md)
     - [Apple II/III](./users/connecting/apple_ii.md)
     - [Atari](./users/connecting/atari.md)
     - [Atari Lynx](./users/connecting/atari_lynx.md)
