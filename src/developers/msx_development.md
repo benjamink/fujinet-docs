@@ -1,0 +1,5 @@
+As of Jan 2025 the current state of MSX Fujinet hardware is that you would need to build your own prototype hardware.  What seems to be working for some is to take a blank [MSX Cartridge card](https://discord.com/channels/655893677146636301/721019729728372817/1437968026824736828) and a [pico2](https://discord.com/channels/655893677146636301/721019729728372817/1437988506860523611) and wire it together.  On the pico the [Fujiversal](https://github.com/FozzTexx/fujiversal) firmware is reported to work against a USB connected pc instead of an ESP32.  Then you can boot the [fujinet-config msx](https://github.com/FujiNetWIFI/fujinet-config/tree/msx#) rom on the MSX.
+
+You can still work on developing software with [OpenMSX](https://github.com/FujiNetWIFI/openMSX/tree/feat/fujinet) by locally building OpenMSX.  Once built you can enable the Fujinet extension in a slot which will boot the fujinet-config.  The [fujinet-lib](https://github.com/FozzTexx/fujinet-lib-experimental) for MSX is experimental, but functional.
+
+For the latest, don't forget to check the [Discord MSX channel](https://discord.com/channels/655893677146636301/931240268773093476)

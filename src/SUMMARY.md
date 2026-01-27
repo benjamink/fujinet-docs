@@ -63,6 +63,7 @@
     - [PC - MS-DOS RS232](./developers/command_protocols/pc_msdos_rs232.md)
     - [Tandy CoCo](./developers/command_protocols/tandy_coco.md)
 - [Introducing a New Platform](./developers/introducing_a_new_platform.md)
+- [Building MSX Virtual Dev environment](./developers/msx_development.md)
 
 # Technical Internals
 
