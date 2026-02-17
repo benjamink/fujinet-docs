@@ -7,6 +7,10 @@ language = "en"
 default-theme ="dark"
 sidebar-header-nav = true
 no-section-label = true
+additional-js = ["mermaid.min.js", "mermaid-init.js"]
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
 
 [output.html.fold]
 enable = true

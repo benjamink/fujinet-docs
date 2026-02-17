@@ -65,6 +65,10 @@
 - [Introducing a New Platform](./developers/introducing_a_new_platform.md)
 - [Building MSX Virtual Dev environment](./developers/msx_development.md)
 
+# Hardware Documentation 
+
+- [Hardware Fundamentals](./hardware/hardware_fundamentals.md)
+
 # Technical Internals
 
 - [FujiNet Enhancement Proposals](./internals/fujinet_enhancement_proposals.md)
