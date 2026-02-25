@@ -2,7 +2,7 @@
 
 # Welcome to FujiNet!
 
-FujiNet is more than just a device, it's a community!  FujiNet brings vintage computer enthusiasts together through the power of the Internet by connecting computers to networks & providing a wealth of peripherals to interact with.  While FujiNet is often best known for its ability to mount disks and other media over wireless networks, it also provides a collection of the most popular peripherals that vintage computer users would expect to work with their machines back in the day.  From modems to printers, the FujiNet provides it all!  
+FujiNet[^homepage] is more than just a device, it's a community!  FujiNet brings vintage computer enthusiasts together through the power of the Internet by connecting computers to networks & providing a wealth of peripherals to interact with.  While FujiNet is often best known for its ability to mount disks and other media over wireless networks, it also provides a collection of the most popular peripherals that vintage computer users would expect to work with their machines back in the day.  From modems to printers, the FujiNet provides it all!  
 
 ## FujiNet Documentation
 
@@ -14,3 +14,5 @@ Get involved in the FujiNet community to learn even more or help us make FujiNet
 
 - <i class="fa-solid fa-globe"></i> [https://fujinet.online](https://fujinet.online)
 - <i class="fa-brands fa-discord"></i> [Join us on Discord](https://discord.gg/9pfYHWgdVs)
+
+[^homepage]: FujiNet's official homepage is at https://fujinet.online
