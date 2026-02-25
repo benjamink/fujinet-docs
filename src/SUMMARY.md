@@ -2,12 +2,9 @@
 
 [Introduction](README.md)
 
-# User Documentation
+# What is FujiNet?
 
-- [What is FujiNet?](./users/what_is_fujinet.md)
-- [Updating Firmware](./users/updating_firmware.md)
-    - [FujiNet Flasher](./users/updating_firmware/fujinet_flasher.md)
-    - [Nightly Firmware Builds](./users/updating_firmware/nightly_firmware_builds.md)
+- [Overview](./users/what_is_fujinet.md)
 - [Platform Overview](./users/platform_overview.md)
     - [Apple II/III](./users/platform_overview/apple_ii.md)
     - [Atari](./users/platform_overview/atari.md)
@@ -16,22 +13,20 @@
     - [Commodore C64/C128](./users/platform_overview/commodore.md)
     - [PC - MS-DOS RS232](./users/platform_overview/pc_msdos_rs232.md)
     - [Tandy CoCo](./users/platform_overview/tandy_coco.md)
-- [Connecting the Device](./users/connecting_the_device.md)
-    - [Apple II/III](./users/connecting/apple_ii.md)
-    - [Atari](./users/connecting/atari.md)
-    - [Atari Lynx](./users/connecting/atari_lynx.md)
-    - [Coleco ADAM](./users/connecting/coleco_adam.md)
-    - [Commodore C64/C128](./users/connecting/commodore.md)
-    - [PC - MS-DOS RS232](./users/connecting/pc_msdos_rs232.md)
-    - [Tandy CoCo](./users/connecting/tandy_coco.md)
-- [Using CONFIG](./users/using_config.md)
-    - [Apple II/III](./users/config/apple_ii.md)
-    - [Atari](./users/config/atari.md)
-    - [Atari Lynx](./users/config/atari_lynx.md)
-    - [Coleco ADAM](./users/config/coleco_adam.md)
-    - [Commodore C64/C128](./users/config/commodore.md)
-    - [PC - MS-DOS RS232](./users/config/pc_msdos_rs232.md)
-    - [Tandy CoCo](./users/config/tandy_coco.md)
+- [Using FujiNet](./users/using_fujinet.md)
+
+# Getting Started
+
+- [Quickstart Guides](./users/quickstart/overview.md)
+    - [Atari 8-bit](./users/quickstart/atari.md)
+    - [Apple II & III](./users/quickstart/apple.md)
+    - [Coleco ADAM](./users/quickstart/adam.md)
+    - [Commodore 64](./users/quickstart/commodore.md)
+    - [RS-232 (MS-DOS PC)](./users/quickstart/rs232.md)
+    - [Virtual FujiNet](./users/quickstart/virtual.md)
+
+# Apps & Software
+
 - [Example Applications](./users/example_apps.md)
     - [cater](./users/example_apps/cater.md)
     - [CP/M](./users/example_apps/cpm.md)
@@ -39,18 +34,48 @@
     - [netcat](./users/example_apps/netcat.md)
     - [News Reader](./users/example_apps/news_reader.md)
     - [Weather](./users/example_apps/weather.md)
-- [Example Games](./users/example_games.md)
+
+# FujiNet-Enabled Games
+
+- [Games Overview](./users/example_games.md)
     - [5 Card Stud](./users/example_games/5_card_stud.md)
     - [Battleship](./users/example_games/battleship.md)
     - [Bouncy World!](./users/example_games/bouncy_world.md)
     - [Fujitzee](./users/example_games/fujitzee.md)
+
+# More Features
+
+- [N: Device](./users/n_device/overview.md)
+    - [Supported Protocols](./users/n_device/protocols.md)
+    - [BASIC Programming](./users/n_device/basic_usage.md)
+    - [Tools and Utilities](./users/n_device/tools.md)
+- [BBS](./users/bbs/connecting.md)
+    - [Deploying Your Own BBS](./users/bbs/deploying.md)
+- [Printer Emulation](./users/printers/overview.md)
+- [Setting Up a TNFS Server](./users/tnfs/setting_up.md)
 - [FujiNet Virtual Machine](./users/fujinet_virtual_machine.md)
+- [Using FujiNet with Emulators](./virtualization/overview.md)
+
+# Updating FujiNet
+
+- [Updating Firmware](./users/updating_firmware.md)
+    - [FujiNet Flasher](./users/updating_firmware/fujinet_flasher.md)
+    - [Nightly Firmware Builds](./users/updating_firmware/nightly_firmware_builds.md)
 
 # Developer Documentation
 
 - [Theory of Operation](./developers/theory_of_operation.md)
 - [Creating a FujiNet Application](./developers/creating_a_fujinet_application.md)
 - [FujiNet-Lib](./developers/fujinet_libs.md)
+- [Developing FujiNet](./developers/developing_fujinet.md)
+- [Firmware Development](./developers/firmware_dev/build_environment.md)
+    - [Building Firmware](./developers/firmware_dev/building_firmware.md)
+    - [Building FujiNet-PC](./developers/firmware_dev/building_fujinet_pc.md)
+    - [Firmware Versioning](./developers/firmware_dev/versioning.md)
+- [Atari Programming Overview](./developers/programming/atari/overview.md)
+- [Apple II Programming Overview](./developers/programming/apple/overview.md)
+- [Commodore Programming Overview](./developers/programming/commodore/overview.md)
+- [ADAM Programming Overview](./developers/programming/adam/overview.md)
 - [Command Reference](./developers/command_reference.md)
     - [Command 1](./developers/command_reference/command1.md)
     - [Command 2](./developers/command_reference/command2.md)
@@ -62,13 +87,23 @@
     - [Commodore C64/C128](./developers/command_protocols/commodore.md)
     - [PC - MS-DOS RS232](./developers/command_protocols/pc_msdos_rs232.md)
     - [Tandy CoCo](./developers/command_protocols/tandy_coco.md)
+- [SIO Commands](./developers/sio_commands/fujinet_device.md)
+    - [N: Network Device ($71-$78)](./developers/sio_commands/network_device.md)
+    - [Error Codes](./developers/sio_commands/error_codes.md)
 - [Introducing a New Platform](./developers/introducing_a_new_platform.md)
 - [Building MSX Virtual Dev environment](./developers/msx_development.md)
 
-# Hardware Documentation 
+# Hardware Documentation
 
 - [Hardware Fundamentals](./hardware/hardware_fundamentals.md)
+- [ESP32 Platform Details](./hardware/esp32.md)
+- [Official Hardware Versions](./hardware/official_versions.md)
+- [Board Bring-Up](./hardware/board_bring_up.md)
 
 # Technical Internals
 
 - [FujiNet Enhancement Proposals](./internals/fujinet_enhancement_proposals.md)
+    - [FEP 001: URL Parsing in Client Applications](./internals/feps/fep_001.md)
+    - [FEP 002: Lobby/Leaderboard Specification](./internals/feps/fep_002.md)
+    - [FEP 003: NetSIO Protocol Specification](./internals/feps/fep_003.md)
+    - [FEP 004: FujiNet Protocol Specification](./internals/feps/fep_004.md)
