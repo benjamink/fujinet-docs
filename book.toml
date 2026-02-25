@@ -5,6 +5,7 @@ language = "en"
 
 [output.html]
 default-theme ="dark"
+preferred-dark-theme = "ayu"
 sidebar-header-nav = true
 no-section-label = true
 additional-js = ["mermaid.min.js", "mermaid-init.js"]
