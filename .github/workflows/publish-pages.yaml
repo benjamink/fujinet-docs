@@ -8,7 +8,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # To push a branch 
+      contents: write  # To push a branch
       pages: write  # To push to a GitHub Pages site
       id-token: write # To update the deployment status
     steps:
@@ -29,16 +29,39 @@ jobs:
           mkdir mdbook-mermaid
           curl -sSL $url | tar -xz --directory=./mdbook-mermaid
           echo `pwd`/mdbook-mermaid >> $GITHUB_PATH
+      - name: Cache mdbook-i18n-helpers binaries
+        id: cache-i18n
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/bin/mdbook-gettext
+            ~/.cargo/bin/mdbook-xgettext
+            ~/.cargo/bin/mdbook-i18n-normalize
+          key: ${{ runner.os }}-mdbook-i18n-helpers
+      - name: Install Rust toolchain
+        if: steps.cache-i18n.outputs.cache-hit != 'true'
+        uses: dtolnay/rust-toolchain@stable
+      - name: Install mdbook-i18n-helpers
+        if: steps.cache-i18n.outputs.cache-hit != 'true'
+        run: cargo install mdbook-i18n-helpers
+      - name: Add cargo bin to PATH
+        run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH
       - name: Build Book
         run: |
           mdbook-mermaid install
+          # Build default (English)
           mdbook build
+          # Build a translated version for each .po file in po/
+          for po in po/*.po; do
+            [ -f "$po" ] || continue
+            lang=$(basename "$po" .po)
+            MDBOOK_BOOK__LANGUAGE=$lang mdbook build -d book/$lang
+          done
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
           path: 'book'
       - name: Deploy to GitHub Pages
         id: deployment

@@ -3,6 +3,9 @@ title = "FujiNet Documentation"
 authors = ["Benjamin Krein"]
 language = "en"
 
+[build]
+extra-watch-dirs = ["po"]
+
 [output.html]
 default-theme ="dark"
 preferred-dark-theme = "ayu"
@@ -10,8 +13,14 @@ sidebar-header-nav = true
 no-section-label = true
 additional-js = ["mermaid.min.js", "mermaid-init.js"]
 
+[preprocessor.gettext]
+after = ["links"]
+
 [preprocessor.mermaid]
 command = "mdbook-mermaid"
+
+[output.xgettext]
+pot-file = "po/messages.pot"
 
 [output.html.fold]
 enable = true
